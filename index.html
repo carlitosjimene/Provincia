@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa Interactivo de Provincias</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <h1>Mapa Interactivo de las Provincias</h1>
+  <p>Haz clic sobre una provincia para ver más información.</p>
+
+  <div class="contenedor-mapa">
+    <img src="mapa-republica-dominicana.jpg" alt="Mapa RD" usemap="#mapaRD">
+
+    <map name="mapaRD">
+      <!-- Provincias con nombre en atributo data-provincia -->
+      <area shape="poly" coords="358,298,355,352,330,364,291,326,290,308,309,306,325,286" alt="San Jose De Ocoa"
+        data-provincia="sanjosedeocoa" href="javascript:void(0);" onclick="abrirProvincia(this)">
+      <!-- Agrega más provincias aquí con sus coordenadas -->
+       <area shape="poly" coords="383,118,355,177,374,203,422,203,434,214,477,221,510,195,451,181,428,164,413,144,402,123" alt="Duarte"
+        data-provincia="duarte" href="javascript:void(0);" onclick="abrirProvincia(this)">
+    </map>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
